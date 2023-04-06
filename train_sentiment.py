@@ -55,8 +55,6 @@ data_loader, optimizer, scheduler = accelerator.prepare(data_loader, optimizer, 
 # Training loop
 for batch in data_loader:
     with accelerator.accumulate(model):
-        # Do step
-        # outputs = model(input_ids=batch["input_ids"], labels=batch["labels"], attention_mask=batch["attention_mask"])
         outputs = model(**batch)
         loss = outputs.loss
         print(loss)
