@@ -1,0 +1,8 @@
+datasets == 2.11.0
+
+# accelerate-0.18.0.dev0 from main branch on 2021-03-04
+git+https://github.com/huggingface/accelerate.git@07ad358f2d9fcb3d490040bee49896c63014b29c
+
+transformers == 4.27.4
+https://download.pytorch.org/whl/nightly/pytorch_triton-2.1.0%2B46672772b4-cp38-cp38-linux_x86_64.whl
+https://download.pytorch.org/whl/nightly/cu117/torch-2.1.0.dev20230406%2Bcu117-cp38-cp38-linux_x86_64.whl
